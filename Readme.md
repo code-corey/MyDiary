@@ -258,3 +258,102 @@ https://roadmap.sh/spring-boot
 
 所以要么时间再分配一下，早上多关注AI相关的，LLM相关的，下午主力输出技术，晚上再搞Web3，Go相关的？
 
+
+
+学习了一下  [Langsmith](https://docs.langchain.com/langsmith/observability),简单的来说，就是针对这些大模型的调用，增加一个Log日志，监控日志，有点像Skywalking一样的东西。然后配合一个 Langsmith UI 可以可视化的看一些细节
+
+
+``` py
+from openai import OpenAI
+from langsmith.wrappers import wrap_openai  # traces openai calls
+
+def retriever(query: str):
+    return ["Harrison worked at Kensho"]
+
+client = wrap_openai(OpenAI())  # log traces by wrapping the model calls
+
+def rag(question: str) -> str:
+    docs = retriever(question)
+    system_message = (
+        "Answer the user's question using only the provided information below:\n"
+        + "\n".join(docs)
+    )
+    resp = client.chat.completions.create(
+        model="gpt-4.1-mini",
+        messages=[
+            {"role": "system", "content": system_message},
+            {"role": "user", "content": question},
+        ],
+    )
+    return resp.choices[0].message.content
+
+if __name__ == "__main__":
+    print(rag("Where did Harrison work?"))
+```
+
+目前Claude Code 我还没有深入使用过，这块得花时间补上才行，因为现在铺天盖地的的都是他们，但是自己都没有掌握，闭着眼睛，等别人宰么？
+
+还有各种Skills，MCP什么的，自己的没有了解，真的是睁眼瞎了。
+
+https://github.com/Donchitos/Claude-Code-Game-Studios
+这个项目中，使用48个 agents,skills ，
+
+别人都是AI Agent军团了，你还在单兵作战？而且还用不好工具？
+
+
+和 Claude Code 有关的插件，究竟如何使用呢？有什么作用呢？得稍微了解一下才行
+
+https://github.com/supermemoryai/supermemory
+
+https://github.com/obra/superpowers
+
+https://github.com/affaan-m/everything-claude-code
+
+
+
+高效率的网络爬虫
+https://github.com/D4Vinci/Scrapling
+
+
+
+https://www.claude-cn.org/claude-code-docs-zh/README.ht
+
+
+用来精简代码的插件
+https://claude.com/plugins/code-simplifier
+
+
+Agentic Design Patterns 系统介绍 AI Agent 系统的各种设计模式
+https://adp.xindoo.xyz/
+https://github.com/xindoo/agentic-design-patterns
+
+
+
+Agent工作流，底层是 Langchain和 LangGranph
+https://github.com/bytedance/deer-flow
+
+
+这些 Skill，究竟能够干什么呢
+https://github.com/VoltAgent/awesome-openclaw-skills
+
+
+AI军团，打造一个杀人团队的
+Enterprise AI Orchestration Platform 60+ Specialized Agents
+https://github.com/ruvnet/ruflo
+
+
+Agent编排器
+https://github.com/superset-sh/superset
+
+https://github.com/karpathy/autoresearch
+
+
+网络爬虫，把整个网站变成markdown格式的或者结构化的数据形式
+https://github.com/firecrawl/firecrawl
+
+午饭过后，手机上面刷到了有关于AI相关的短视频，感觉自己都已经跟不上时代了，得好好的学习一番才行。
+
+
+目前发现整个 codex的消耗还是很大，发现了这个项目，可以节省Token
+
+https://github.com/rtk-ai/rtk
