@@ -309,12 +309,8 @@ https://github.com/obra/superpowers
 
 https://github.com/affaan-m/everything-claude-code
 
-
-
 高效率的网络爬虫
 https://github.com/D4Vinci/Scrapling
-
-
 
 https://www.claude-cn.org/claude-code-docs-zh/README.ht
 
@@ -326,7 +322,6 @@ https://claude.com/plugins/code-simplifier
 Agentic Design Patterns 系统介绍 AI Agent 系统的各种设计模式
 https://adp.xindoo.xyz/
 https://github.com/xindoo/agentic-design-patterns
-
 
 
 Agent工作流，底层是 Langchain和 LangGranph
@@ -357,3 +352,12 @@ https://github.com/firecrawl/firecrawl
 目前发现整个 codex的消耗还是很大，发现了这个项目，可以节省Token
 
 https://github.com/rtk-ai/rtk
+
+
+今日总结：今天上午主要是扩展自己的知识面，看看前沿的技术都有什么，AI相关的，下午所有的时间都在AI上面了，虽然也是使用Codex进行了代码工作。但是对于ClaudeCode和Ai Agent节点流程编辑，还是不懂
+
+如何打造一个虚拟团队，是迫在眉睫的事情。
+
+今天已经列举了很多的Github仓库连接。得每个仓库都要花时间去学习，起码能够跑起来，看看是什么效果才行。
+
+不过，今天有些点还是没有做好。就是，通勤时间没有完全利用起来，应该全部用来学习英语单词的。Go语言今天没有任何进步，区块链也是没有任何的进步。今天打个差评。工作时间太长了，得缩短一些才行。要有更多的时间用来学习新的知识。看新的网站和github仓库。
