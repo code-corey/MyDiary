@@ -400,3 +400,65 @@ https://docs.langchain.com/oss/python/deepagents/overview
 
 工作中，分为本职工作，必须要写的代码，还有AI Agent相关的，这个也是工作内容，只不过是别人的工作内容而已。
 
+最近收集了很多的仓库的github。但是很多仓库都不明白是什么意思，也不知道是怎么用的。
+
+对于每个仓库，起码得知道，他都能够做什么。并且能够写下日记来记录一下。
+
+关于AI Agent的很多概念，得跟着RoadMap快速的学习和了解一下。
+
+我刷到一个仓库，可以使用很多免费的API，到目前为止，我都没怎么好好的使用API Key，去尝试这些新的技术点。
+
+关于这个ClaudCode 很多Agent都需要 API Key,先解决这个 API Key免费问题。
+
+还有一个，能够让我们去使用页面登录，然后就可以免费使用API了，这两个仓库先好好的看看。
+
+
+
+https://github.com/e2b-dev/awesome-ai-agents
+
+https://github.com/Jenqyang/Awesome-AI-Agents
+
+https://github.com/jim-schwoebel/awesome_ai_agents
+
+https://github.com/Shubhamsaboo/awesome-llm-apps
+
+https://github.com/Shubhamsaboo/awesome-llm-apps?tab=readme-ov-file
+
+
+
+公司里面用到了 deepagents，这个得花时间来研究一下究竟是用来干什么的，如果对这个不懂的话，那么就无法做项目了
+
+https://github.com/langchain-ai/deepagents
+
+https://github.com/langchain-ai/langchain
+
+https://github.com/langchain-ai/langgraph
+
+今晚把这三个项目拉下来了，并且使用 codex分析了学习的路径
+
+
+https://github.com/crewAIInc/crewAI?tab=readme-ov-file 这个项目是用来和 deepagents类似的工作
+
+
+
+
+https://github.com/jnMetaCode/agency-agents-zh
+
+https://github.com/msitarzewski/agency-agents
+
+
+这个仓库中，定义了很多个用户的角色很多个智能体
+
+
+https://github.com/bmad-code-org/BMAD-METHOD
+这个定义了一个人的团队
+
+
+
+
+
+
+
+
+
+
