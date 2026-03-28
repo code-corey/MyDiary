@@ -483,7 +483,25 @@ https://stitch.withgoogle.com/projects/12889535102414467041?pli=1
 然后使用 AI Stdio生成能够运行的网页
 https://aistudio.google.com/apps/f02ca462-1c06-43ce-ae63-85e9e96e59bb?showAssistant=true&showPreview=true
 
-最后生成真正的IOS应用类的
+最后生成真正的IOS应用类的App
+
+
+# OpenCode的使用
+
+使用 oh my opencode,里面集中了一个智能体团队。
+
+比如设置好一个目标之后，计算机会尽可能得实现一个目标
+
+/ralph-loop循环 可以长时间的做一个任务
+
+但是目前碰到的问题就是无法再当前地区中使用
+
+
+
+## 项目的分析的可视化
+使用这个项目，把一个比较庞大的系统，通过可视化的方式来展示出来
+
+https://github.com/abhigyanpatwari/GitNexus?tab=readme-ov-file
 
 
 
