@@ -468,3 +468,22 @@ https://github.com/bmad-code-org/BMAD-METHOD
 
 设计一个名字加做《闻啼鸟》的APP，用户录制一段鸟叫声，然后AI分析出是什么鸟，有可能AI会分析出多个，每种鸟都有对应的置信度。整体设计要美观大气清新。
 
+
+今天学习了很多的东西，比较杂乱，现在整理了一下
+
+
+# 在这个页面中 OpenCode+全新工具链，开发识别鸟叫声手机APP
+https://www.youtube.com/watch?v=bQxVeJmJTO4
+
+> 我用一套全新工具链，VibeCoding了一个好玩的手机APP----《闻啼鸟》。只需要录制一段小鸟的叫声，AI就能分析出鸟的品种，并且弹出图文知识卡片。  我使用OpenCode实现了一个Python后台服务，调用本地离线AI模型识别鸟类音频。 前端部分则是先使用Google Stich生成设计稿，然后导入AI Studio 使用Gemini3模型生成对应的前端代码，使用OpenCode完成本地调试，最后使用Capacitor打包成安卓或者iOS APP
+
+使用 stitch 生成一个网页的图片
+https://stitch.withgoogle.com/projects/12889535102414467041?pli=1
+
+然后使用 AI Stdio生成能够运行的网页
+https://aistudio.google.com/apps/f02ca462-1c06-43ce-ae63-85e9e96e59bb?showAssistant=true&showPreview=true
+
+最后生成真正的IOS应用类的
+
+
+
