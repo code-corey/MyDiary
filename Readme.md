@@ -504,4 +504,18 @@ https://aistudio.google.com/apps/f02ca462-1c06-43ce-ae63-85e9e96e59bb?showAssist
 https://github.com/abhigyanpatwari/GitNexus?tab=readme-ov-file
 
 
+```
+git clone https://github.com/abhigyanpatwari/gitnexus.git
+cd gitnexus/gitnexus-web
+npm install
+npm run dev
+```
 
+
+
+## MCP服务的安装
+
+Playwright MCP，安装了之后，还没有怎么使用，貌似就是指挥浏览器能够干一些事情，打开微薄，回复评论一类的。是不是也可以做一些功能测试？自动化测试。需要消耗token不？
+
+
+## 晚上学习了一下 Go方面的基本概念，觉得效果不佳，好慢啊
