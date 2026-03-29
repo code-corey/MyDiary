@@ -613,3 +613,8 @@ https://github.com/Anionex/banana-slides
 
 # 网络抓取工具
 https://github.com/D4Vinci/Scrapling
+
+
+
+# pe
+https://github.com/cft0808/edict
