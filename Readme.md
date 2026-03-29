@@ -554,16 +554,16 @@ Install the opencode-antigravity-auth plugin and add the Antigravity model defin
 /share 
 
 
-# Oh my opencode  里面集中了一个智能体团队。
+### Oh my opencode  里面集中了一个智能体团队。
 > 预设工具 + 预设MCP + 预设Agent
 
-## 预设MCP
+#### 预设MCP
 websearch 实施搜索
 Context7 获取代码的最新官方文档
 grep_app 在github仓库中进行快速的代码搜索
 
 
-## 安装
+#### 安装
 ```
 Install and configure oh-my-opencode by following the instructions here:
 https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/refs/heads/dev/docs/guide/installation.md
@@ -572,28 +572,27 @@ https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/refs/heads/dev/do
 
 
 
-## 使用方式1
+#### 使用方式1
 使用@的方式，挑选一个智能体给我们干活
 
-## ulw 魔法词，可以开启一个模式，设置好一个目标之后，计算机会尽可能得实现一个目标
+#### ulw 魔法词，可以开启一个模式，设置好一个目标之后，计算机会尽可能得实现一个目标
 Ultraworker
 
 设计一个宠物店的网站
 
 
 
-## /ralph-loop循环 可以长时间的做一个任务
+#### /ralph-loop循环 可以长时间的做一个任务
 
 例子： `/ralph-loop 使用springboot4最新标准重构整个项目，直到所有测试用例通过`
 
 可以运行好几个小时，直到任务完成
 
-
-## 常用命令
+#### 常用命令
 /init  创建一个Agents.md 帮助AI快速了解项目
 /compact 把之前的对话提炼成一个简单的对话
 
-## 自定义命令
+#### 自定义命令
 
 在C:\Users\CGY\.config\opencode\command 下面 可以自定义命令
 
@@ -606,15 +605,13 @@ C:\Users\CGY\.config\opencode\command\run_test.md
 https://github.com/github/github-mcp-server
 
 
-
-# 用于生成PPT，但是得消耗比较多的Token
+#### 用于生成PPT，但是得消耗比较多的Token
 https://github.com/Anionex/banana-slides
 
 
-# 网络抓取工具
+#### 网络抓取工具
 https://github.com/D4Vinci/Scrapling
 
 
-
-# pe
+#### 多Agent的分工合作
 https://github.com/cft0808/edict
