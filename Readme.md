@@ -723,7 +723,23 @@ print(chain.invoke(msg))
 
 
 
-⭕2-06Langchain的提示模板.mp4
+🎯2-06Langchain的提示模板.mp4
+使用这种方式去定义一个模版，后续在进行调用的时候，就可以直接使用
+``` py
+promptTemplate = ChatPromptTemplate.from_messages(
+    [
+        ('system','把内容翻译成{language}'),
+        ('user','{text}')
+    ]
+)
+```
+
+直接调用的时候，传入对应的参数就行
+``` py
+print(chain.invoke({'language': 'English','text': '今天天气好呀'}))
+```
+
+
 ⭕3-07部署你的langchain程序.mp4
 ⭕4-08LangChain构建聊天机器人.mp4
 ⭕5-09流式输出的处理.mp4
