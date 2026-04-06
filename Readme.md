@@ -740,7 +740,53 @@ print(chain.invoke({'language': 'English','text': '今天天气好呀'}))
 ```
 
 
-⭕3-07部署你的langchain程序.mp4
+🎯3-07部署你的langchain程序.mp4
+
+部署的使用我们需要安装一下 LangServe，这个langserve里面包含了一个FastAPI，用于启动一个Python的web服务器
+``` py
+pip install langserve[all]
+```
+
+我们使用 FastAPI，启动起来
+``` py
+app= FastAPI(title='我的Langchain服务',version='V1.0',description="使用Langchain翻译任何语句的服务")
+
+add_routes(
+    app,
+    chain,
+    path="/chain"
+)
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app,host="localhost",port=8000)
+```
+
+调用的时候，有两种方式，一种是代码，一种是使用Postman
+
+使用代码的方式如下：
+``` py
+
+from langserve import RemoteRunnable
+
+if __name__ == "__main__":
+    client=RemoteRunnable('http://127.0.0.1:8000/chain')
+    print(client.invoke({'language': 'english', 'text': '早上好'}))
+```
+
+使用APi调用的方式如下：
+```
+POST http://127.0.0.1:8000/chain/invoke
+
+{
+    "input":{
+        "language": "english",
+         "text": "早上好"
+    }
+}
+```
+
+
+
 ⭕4-08LangChain构建聊天机器人.mp4
 ⭕5-09流式输出的处理.mp4
 ⭕6-10构建文档和向量空间.mp4
