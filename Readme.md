@@ -737,6 +737,104 @@ print(chain.invoke(msg))
 在使用的过程当中，发现，其实使用什么大模型厂商的都是无感知的，无非是一个OPEN_API_KEY 不一样，模型地址空间不一样。其余代码都不需要改动
 
 
+
+## 2026年04月7日 周二 [**第18天**]
+
+今天在车上学习了几个概念
+1、cli Anything,openCli （写一篇博客好好的说一下究竟是怎么回事）
+为什么大家都弃用MCP了？转向Cli
+
+https://github.com/HKUDS/CLI-Anything
+
+https://github.com/jackwener/opencli
+
+对任何的一款工具，如果只是简单的浏览个10来分钟，根本就无法获得其精髓。任何一款软件或者开源框架，都要学习将近1周的时间
+
+
+2、OpenClaw介入飞书，微信,习惯使用养龙虾
+
+微信 - 我 - 设置 - 插件 - 微信clawbot
+
+``` shell
+
+npm install -g openclaw
+
+npx -y @tencent-weixin/openclaw-weixin-cli@latest install
+```
+
+3、智普下面接入Claude Code。工具只是外面的一层壳，但是真正的思想操作系统，都是各自厂商的大模型
+
+4、Harness Engineering <-- Context Engineering <-- Prompt Engineering 的演进链条（ 写一篇博客好好的说一下）
+
+5、Coding Plan 就是购买套餐包，比普通的根据API按量收费更加的便宜的做法。
+
+6、写博客的时候，需要一个Typora，方便写博客，而且还需要一个图床，找到了七牛云，七牛云开通存储服务的时候，又需要一个域名，于是我去到了腾讯云，买了一个域名，code-corey.com 。域名又需要注册，现在正在审核当中。
+
+后面我就好好的经营一下自己的博客，把自己的博客搞得高大上那种
+
+
+## 2026年04月08日 周三 [**第19天**]
+昨晚在家里把在Youtube上面看过的视频，整理成了文章，记录在了自己的博客中。
+
+昨晚和今天都在看一个关于 Harness Engineering的事情。那个不写一行代码的公司，究竟是如何做的，他们是如何正常的完成日常功能的交付。
+如何让AI Agent自己 长时间的去运行？而不至于跑偏。
+
+
+---
+
+## 🚀 AI Coding Harness 标准模板
+
+### 1. 角色定义 (Role)
+> 设定 AI 的专业领域，例如：`你是一名资深的 [Java/Python/Go] 后端架构师，精通高性能、高并发系统设计。`
+
+### 2. 任务目标 (Objective)
+> 明确要实现的功能。
+> * **功能描述：** [例如：实现一个带 Redis 缓存的订单查询接口]
+> * **输入/输出定义：** [定义输入参数类型和返回的 JSON 结构]
+
+### 3. 技术约束 (Hard Constraints) —— **这是 Harness 的核心**
+> 强制 AI 必须遵守的硬性指标：
+* **依赖限制：** 只能使用 [特定的库，如 FastAPI, SQLAlchemy 2.0]。
+* **异常处理：** 必须包含 `try-except` 块，且错误信息必须符合项目 `ErrorHandler` 类的规范。
+* **性能要求：** 时间复杂度必须优于 $O(n^2)$，避免在循环中进行数据库查询（N+1 问题）。
+* **安全要求：** 必须对输入参数 [Parameter A] 进行正则校验，防止注入攻击。
+
+### 4. 工程质量规范 (Quality Standards)
+> 规范代码风格：
+* **注释规范：** 遵循 [如：Google Style Docstrings]。
+* **日志记录：** 在关键入口和捕获异常处调用 `logger.info` 或 `logger.error`。
+* **类型检查：** 必须包含 Python Type Hints 或 TypeScript Interfaces。
+
+### 5. 验证指令 (Validation Snippet)
+> 要求 AI 在生成代码的同时，提供对应的验证脚本：
+* **测试要求：** “请同时生成 3 个 Pytest 测试用例，包括 1 个正常路径和 2 个边缘情况。”
+* **自检清单：** “在输出代码前，请确认是否处理了 `None` 指针和超时重试机制。”
+
+
+```
+# 任务：用户登录逻辑实现
+
+## 1. 基础信息
+- 框架：FastAPI
+- 数据库：PostgreSQL (使用 Tortoise-ORM)
+
+## 2. 硬性约束 (The Harness)
+- 【安全】密码严禁明文存储，必须使用 `passlib` 的 `bcrypt` 进行 hash。
+- 【逻辑】登录失败超过 5 次需抛出 `HTTP_429_TOO_MANY_REQUESTS`。
+- 【格式】返回结构必须为 `{"access_token": str, "token_type": "bearer"}`。
+
+## 3. 性能规范
+- 数据库查询必须使用 `await`。
+- 必须包含 Token 的过期时间设置（默认 30 分钟）。
+
+## 4. 验证要求
+- 请生成对应的单元测试代码，覆盖“密码错误”和“用户不存在”两种场景。
+```
+
+感觉就是在提示词里面，指定更加严格的规则。
+
+今天已经把马士兵的课程下载到公司的电脑上，如果有时间的话，
+
 - ⭕8-12Tavily搜索工具.mp4
 - ⭕9-13Agent代理的使用.mp4
 - ⭕10-14构建RAG对话应用(一).mp4
@@ -764,6 +862,4 @@ print(chain.invoke(msg))
 - ⭕8-34文本自动摘要MapReduce(一)   .sz
 - ⭕9-35文本自动摘要MapReduce(二)   .sz
 - ⭕10-36文本自动摘要Refine方式   .sz
-
-
 
