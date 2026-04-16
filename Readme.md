@@ -994,6 +994,52 @@ Base URL :https://dashscope.aliyuncs.com/compatible-mode/v1
 API Key:key
 
 
+
+
+## 2026年04月15日 周三 [**第26天**]
+
+https://coding-plans.jqknono.com/#domestic
+
+算力租赁
+https://www.suanlix.cn/user/login
+https://autodl.com/home 
+
+
+虚拟化GPU的
+
+https://github.com/Project-HAMi/HAMi
+
+https://deepwiki.com/Project-HAMi/HAMi/1-overview
+
+https://project-hami.io/zh/
+
+https://aws.amazon.com/cn/blogs/china/gpu-virtualization-practice-based-on-hami/
+
+Go，K8s 
+
+
+HAMI的价值，全球都在进行AI大战，那么显卡什么的，资源非常的紧缺，这个时候能否使用K8s中的的资源调度，对GPU资源进行合理的分配
+
+https://jimmysong.io/zh/blog/ai-native-from-cloud-native/
+AI领域中的专家
+
+首先有KDS(城市级别)，KubeCron（全球级别）这两种会议演讲
+必须提交有价值的内容，然后才能去进行演讲
+
+全程都是英文的演讲
+
+自己搭建一个服务器，然后安装上HAMI，然后针对
+
+
+
+CUDA的是什么
+https://juejin.cn/post/7524308480909525030
+
+
+
+
+
+
 - ⭕8-12Tavily搜索工具.mp4  👈👈👈👈👈
 https://www.tavily.com/
 
