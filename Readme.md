@@ -1042,6 +1042,11 @@ https://juejin.cn/post/7524308480909525030
 今天去了重庆去治疗鼻子，最为关键的是，得要把自己的身体搞好。得11点钟之前睡。
 
 
+## 2026年04月19日 周六 [**第30天**]
+
+学习了使用Python 调试OpenAI Embedding
+
+
 - ⭕8-12Tavily搜索工具.mp4  👈👈👈👈👈
 https://www.tavily.com/
 
