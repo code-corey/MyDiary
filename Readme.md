@@ -1042,11 +1042,87 @@ https://juejin.cn/post/7524308480909525030
 今天去了重庆去治疗鼻子，最为关键的是，得要把自己的身体搞好。得11点钟之前睡。
 
 
-## 2026年04月19日 周六 [**第30天**]
+## 2026年04月19日 周日 [**第30天**]
 
 学习了使用Python 调试OpenAI Embedding
 
+## 2026年04月20日 周一 [**第31天**]
+今天知道了在我们搭建了一个大模型之后，如何进行使用.
 
+```
+http://192.168.13.23:8842/v1/chat/completions
+{
+    "model": "Qwen3.5-27B-Q8_0.gguf",
+    "messages": [
+        {
+            "role": "user",
+            "content": "出师表默写一下"
+        }
+    ]
+}
+```
+
+在我们使用ollama进行跑起来来一个服务之后，框架部分就会 添加个地址，作为对话的url地址 v1/chat/completions
+
+但是我们自己进行使用的时候，都是使用类似下面的配置进行使用
+``` py
+# 配置
+client = OpenAI(
+    base_url="http://192.168.13.23:8842/v1",
+    api_key="ollama"
+)
+MODEL_NAME = "Qwen3.5-27B-Q8_0.gguf"
+
+```
+
+## 2026年04月21日 周二 [**第32天**]
+
+今天尝试使用ollama搭建的模型进行使用，
+
+
+当我们自己搭建了一个ollama模型后，可以结合 openCode客户端进行使用
+`C:\Users\用户名称\.config\opencode\opencode.json`
+
+
+相关的配置如下，配置好baseUrl地址和模型地址
+```
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+    "oh-my-openagent@latest"
+  ],
+  "provider": {
+        "ollama": {
+            "npm": "@ai-sdk/openai-compatible",
+            "name": "My Local Ollama",
+            "options": {
+                "baseURL": "http://192.168.13.23:8842/v1"
+            },
+            "models": {
+                "Qwen3.5-27B-Q8_0.gguf": {
+                    "name": "Qwen3.5-27B-Q8_0.gguf",
+                     "limit": {
+                        "context": 128000,
+                        "output": 8192
+                    }
+                }
+            }
+        }
+    }
+}
+
+```
+
+登录到客户端中，使用opencode启动服务，然后选择模型的时候，选择 My Local Ollama，对应的 Qwen3.5-27B-Q8_0.gguf模型
+
+然后就可以免费的使用大模型，让大模型帮助你做一些事情了
+
+这两天对自己搭建一个Ai手脚的事情来讲，加强了我对于大模型如何使用外围工具有一定的印象和了解。
+
+今天把大模型接入到opencode后，发现opencode就是一个手脚一应俱全的铠甲战士一样，我在像一个问题，就是如果我想要
+
+
+## 未完成的事情
 - ⭕8-12Tavily搜索工具.mp4  👈👈👈👈👈
 https://www.tavily.com/
 
