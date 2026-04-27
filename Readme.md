@@ -1122,6 +1122,43 @@ MODEL_NAME = "Qwen3.5-27B-Q8_0.gguf"
 今天把大模型接入到opencode后，发现opencode就是一个手脚一应俱全的铠甲战士一样，我在像一个问题，就是如果我想要
 
 
+
+## 2026年04月24日 周六 [**第35天**]
+后面连续的几天，首先是完成了 LangChain MCP相关的视频教学
+
+但是，但是整个视频跟下来后，没有做总结和回顾，得输出才行  基于MCP的Agent开发
+
+
+
+1、代表着技术前沿的知识，每周都要进行查看，并且写文章进行总结
+
+https://www.youtube.com/results?search_query=%E5%BE%AE%E8%B0%83%E5%A4%A7%E6%A8%A1%E5%9E%8B
+https://www.youtube.com/watch?v=opYnFXNw2fU
+https://www.youtube.com/@linbintalk/videos
+https://www.youtube.com/@lingdujieshuo/videos
+https://www.youtube.com/@tech-shrimp/videos
+https://www.youtube.com/watch?v=sE12haEVREY
+https://www.youtube.com/watch?v=nlK7-zuYDcs
+
+
+2、马士兵大模型中的 课程教学
+LangChain MCP相关的相关知识点，比如，写一篇关于LangGranf的使用
+
+
+3、关于后面的职业规划
+- 成为技术总监和经理，能够自己去单独的接单和做事情
+- 学习Web3领域相关的知识，然后进军以太坊行业
+- 学习AI相关的知识，紧跟着最新的实事
+- 出去面试（把所有的知识点进行揉碎，有自己的研究和理解）
+- 考取中医营业执照（花费7-8年的时间去做这个事情，但是短期看来不靠谱，因为人的精力是有限的）
+
+
+
+
+
+
+
+
 ## 未完成的事情
 - ⭕8-12Tavily搜索工具.mp4  👈👈👈👈👈
 https://www.tavily.com/
